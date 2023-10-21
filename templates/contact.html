@@ -1,0 +1,132 @@
+{% extends "layouts/main.html" %}
+
+{%load static%}
+
+{% block body %}
+      <!-- why section -->
+      <section class="why_section layout_padding">
+         <div class="container">
+         
+            <div class="row">
+               <div class="col-lg-8 offset-lg-2">
+                  <div class="full">
+                     <form action="https://formsubmit.co/tattaandrew@gmail.com" method="POST">
+                        <fieldset>
+                           <input type="text" placeholder="Enter your full name" name="name" required />
+                           <input type="email" placeholder="Enter your email address" name="email" required />
+                           <input type="text" placeholder="Enter subject" name="subject" required />
+                           <textarea placeholder="Enter your message" required></textarea>
+                           <input type="submit" value="Submit" />
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end why section -->
+      <!-- arrival section -->
+        
+      <section class="arrival_section">
+         <div class="container">
+            <div class="box">
+               <div class="arrival_bg_box">
+                 <img src="{% static "/images/disha-patani-women-actress-model-bollywood-actresses-hd-wallpaper-preview.jpg" %}" alt="">
+     
+                  
+               </div>
+               <div class="row">
+                  <div class="col-md-6 ml-auto">
+                     <div class="heading_container remove_line_bt">
+                        <h2>
+                          NewArrivals
+                        </h2>
+                     </div>
+                     <p style="margin-top: 20px;margin-bottom: 30px;">
+                       Introducing our latest collection of New Arrivals, where fashion meets innovation. Our design team has been hard at work curating a fresh selection of styles to elevate your wardrobe. From chic and trendy pieces to timeless classics, these arrivals are a reflection of the latest fashion trends. Discover the perfect blend of comfort, quality, and style. It's time to update your look with our newest arrivals, so you can step out with confidence and make a statement. Explore the future of fashion today.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+<!-- end arrival section -->
+      <!-- footer section -->
+      <footer class="footer_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4 footer-col">
+                  <div class="footer_contact">
+                     <h4>
+                        Reach at..
+                     </h4>
+                     <div class="contact_link_box">
+                        <a href="">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>
+                        Location
+                        </span>
+                        </a>
+                        <a href="">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>
+                        Call +91 9837829273
+                        </span>
+                        </a>
+                        <a href="">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>
+                           skywings@gmail.com
+                        </span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 footer-col">
+                  <div class="footer_detail">
+                     <a href="index.html" class="footer-logo">
+                     Famms
+                     </a>
+                     <p>
+                        Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+                     </p>
+                     <div class="footer_social">
+                        <a href="">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 footer-col">
+                  <div class="map_container">
+                     <div class="map">
+                        <div id="googleMap"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-info">
+               <div class="col-lg-7 mx-auto px-0">
+                  <p>
+                     &copy; <span id="displayYear"></span> All Rights Reserved By
+                     <a href="https://html.design/"></a><br>
+         
+                     Distributed By <a href="https://themewagon.com/" target="_blank">skywings</a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      {% endblock body %} 

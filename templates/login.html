@@ -1,0 +1,87 @@
+{% extends "layouts/main.html" %}
+{% load static %}
+
+{% block css%}
+<style>
+
+    
+    .container_1 {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .form-group_1 {
+        margin-bottom: 20px;
+    }
+    
+    label_1 {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .btn_1 {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .btn_1:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+
+
+{% endblock css%}
+
+
+{% block body %}
+
+
+
+
+<div class="container_1">
+    <h2>Login</h2>
+    <form action="#" method="post">
+        {% csrf_token %}
+        <div class="form-group_1">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group_1">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group_1">
+            <button type="submit" class="btn_1">Login</button>
+        </div>
+    </form>
+</div>
+
+
+{%for messages in messages %}
+<h3 style="color:#ff749f">{{messages}}</h3> 
+{% endfor %}
+
+
+{% endblock body %}
